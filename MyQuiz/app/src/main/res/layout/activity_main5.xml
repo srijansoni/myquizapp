@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivek.myquiz.main3Activity"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goto"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/t5"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        ></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q4. What is the capital of Russia ?"
+        android:textAlignment="center"
+        android:id="@+id/q5"
+        android:textSize="35sp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a5a"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/q5"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="A. Moscow"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a5a"
+        android:id="@+id/a5b"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="B. Los Angeles"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a5c"
+        android:textColor="#000"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/a5b"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="C. Lucknow"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a5c"
+        android:id="@+id/a5d"
+        android:textColor="#000"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="D. New York"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNDO"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_below="@+id/a5d"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ba5"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@+id/a5d"
+        android:layout_marginTop="20dp"
+        android:text="NEXT"
+        android:textSize="30sp"
+        android:id="@+id/n5"
+        android:textColor="#000"/>
+
+</RelativeLayout>
+

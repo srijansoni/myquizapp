@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vivek.myquiz.Main2Activity"
+    android:background="@drawable/background">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/spinner"
+        android:id="@+id/spinner"
+        android:prompt="@string/prompt"
+        ></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q1. The World Largest desert is ?"
+        android:textAlignment="center"
+        android:id="@+id/q2"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:textSize="35sp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a2a"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/q2"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="A. Thar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a2a"
+        android:id="@+id/a2b"
+        android:textColor="#000"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="B. Kalahari"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a2c"
+        android:textColor="#000"
+        android:layout_below="@+id/a2b"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="C. Sahara"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a2c"
+        android:id="@+id/a2d"
+        android:background="@drawable/shape"
+        android:layout_marginRight="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="D. Sonoran"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNDO"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_below="@+id/a2d"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ba2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@+id/a2d"
+        android:layout_marginTop="20dp"
+        android:text="NEXT"
+        android:id="@+id/n2"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+</RelativeLayout>
