@@ -31,22 +31,27 @@ public class Main2Activity extends AppCompatActivity {
                 if(adapterView.getItemAtPosition(i).toString().equals("Question 1"))
                 {
                     Intent intent=new Intent(Main2Activity.this,Main2Activity.class);
+                    startActivity(intent);
                 }
                 if(adapterView.getItemAtPosition(i).toString().equals("Question 2"))
                 {
                     Intent intent=new Intent(Main2Activity.this,main3Activity.class);
+                    startActivity(intent);
                 }
                 if(adapterView.getItemAtPosition(i).toString().equals("Question 3"))
                 {
                     Intent intent=new Intent(Main2Activity.this,Main4Activity.class);
+                    startActivity(intent);
                 }
                 if(adapterView.getItemAtPosition(i).toString().equals("Question 4"))
                 {
                     Intent intent=new Intent(Main2Activity.this,Main5Activity.class);
+                    startActivity(intent);
                 }
                 if(adapterView.getItemAtPosition(i).toString().equals("Question 5"))
                 {
                     Intent intent=new Intent(Main2Activity.this,Main6Activity.class);
+                    startActivity(intent);
                 }
             }
 
