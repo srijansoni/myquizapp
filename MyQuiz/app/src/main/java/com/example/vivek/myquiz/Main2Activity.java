@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
- Button b;
+ Button b,c;
     TextView t1,t2,t3,t4;
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
@@ -60,6 +60,7 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         });
+        c= (Button) findViewById(R.id.ba2);
         b= (Button) findViewById(R.id.n2);
         t1= (TextView) findViewById(R.id.a2a);
         t2= (TextView) findViewById(R.id.a2b);
@@ -72,33 +73,79 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                t1.setBackgroundResource(R.drawable.shape);
+                t2.setBackgroundResource(R.drawable.shape);
+                t3.setBackgroundResource(R.drawable.shape);
+                t4.setBackgroundResource(R.drawable.shape);
+            }
+        });
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 t1.setBackgroundColor(Color.RED);
-                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT);
+                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT).show();
+                t2.setBackgroundResource(R.drawable.shape);
+                t3.setBackgroundResource(R.drawable.shape);
+                t4.setBackgroundResource(R.drawable.shape);
+
             }
         });
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 t2.setBackgroundColor(Color.RED);
-                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT);
+                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT).show();
+                t1.setBackgroundResource(R.drawable.shape);
+                t3.setBackgroundResource(R.drawable.shape);
+                t4.setBackgroundResource(R.drawable.shape);
             }
         });
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 t3.setBackgroundColor(Color.GREEN);
-                Toast.makeText(Main2Activity.this,"Well Done",Toast.LENGTH_SHORT);
-            }
+                Toast.makeText(Main2Activity.this,"Well Done",Toast.LENGTH_SHORT).show();
+                t1.setBackgroundResource(R.drawable.shape);
+                t2.setBackgroundResource(R.drawable.shape);
+                t4.setBackgroundResource(R.drawable.shape);            }
         });
+
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 t4.setBackgroundColor(Color.RED);
-                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT);
+                Toast.makeText(Main2Activity.this,"Tough Luck",Toast.LENGTH_SHORT).show();
+                t1.setBackgroundResource(R.drawable.shape);
+                t3.setBackgroundResource(R.drawable.shape);
+                t2.setBackgroundResource(R.drawable.shape);
             }
         });
+     /*   if(t1.isSelected())
+        {
+          t2.setBackgroundResource(R.drawable.shape);
+            t3.setBackgroundResource(R.drawable.shape);
+            t4.setBackgroundResource(R.drawable.shape);
+        }
+        if(t2.isSelected())
+        {
+            t1.setBackgroundResource(R.drawable.shape);
+            t3.setBackgroundResource(R.drawable.shape);
+            t4.setBackgroundResource(R.drawable.shape);
+        }
+        if(t3.isSelected())
+        {
+            t2.setBackgroundResource(R.drawable.shape);
+            t1.setBackgroundResource(R.drawable.shape);
+            t4.setBackgroundResource(R.drawable.shape);
+        }
+        if(t4.isSelected())
+        {
+            t2.setBackgroundResource(R.drawable.shape);
+            t3.setBackgroundResource(R.drawable.shape);
+            t1.setBackgroundResource(R.drawable.shape);
+        }*/
     }
 }

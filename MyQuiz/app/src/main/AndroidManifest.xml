@@ -30,7 +30,8 @@
         <activity android:name=".Main13Activity" />
         <activity android:name=".Main14Activity" />
         <activity android:name=".Main15Activity" />
-        <activity android:name=".Main16Activity"></activity>
+        <activity android:name=".Main16Activity" />
+        <activity android:name=".Main17Activity"></activity>
     </application>
 
 </manifest>

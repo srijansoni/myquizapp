@@ -15,8 +15,7 @@
         android:layout_marginTop="15dp"
         android:entries="@array/spinner"
         android:id="@+id/spinner"
-        android:prompt="@string/prompt"
-        ></Spinner>
+        android:prompt="@string/prompt"></Spinner>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
