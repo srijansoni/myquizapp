@@ -121,6 +121,6 @@ Button b,c;
                 t2.setBackgroundResource(R.drawable.shape);
                 t3.setBackgroundResource(R.drawable.shape);
             }
-        });
+        });//comment
     }
 }
